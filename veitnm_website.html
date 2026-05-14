@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vietnam ETA Assistance Services</title>
+  <meta name="description" content="Professional Vietnam ETA and eVisa assistance services for tourists and business travelers. Fast processing support, secure applications, and expert guidance." />
+  <meta name="keywords" content="Vietnam ETA, Vietnam eVisa, Vietnam visa assistance, Vietnam tourist visa, Vietnam business visa" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      color: #0f172a;
+    }
+
+    .services-grid,
+    .steps-grid,
+    .benefits-grid,
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .process-step {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: #38bdf8;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      border-radius: 50%;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      background: #020617;
+      color: #fff;
+      padding: 60px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 14px;
+    }
+
+    .notice {
+      background: #fff7ed;
+      border-left: 6px solid #f97316;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 15px;
+    }
+
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Vietnam ETA</div>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Vietnam ETA & eVisa Assistance Services</h1>
+    <p>Professional visa assistance for tourists, business travelers, and international visitors applying for Vietnam ETA and eVisa services online.</p>
+    <a href="#contact" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Services</h2>
+    </div>
+
+    <div class="services-grid">
+      <div class="card">
+        <h3>Tourist ETA Assistance</h3>
+        <p>Complete support for Vietnam tourist ETA applications including document review and application guidance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Business eVisa Support</h3>
+        <p>Professional business visa assistance for meetings, conferences, and corporate travel purposes.</p>
+      </div>
+
+      <div class="card">
+        <h3>Urgent Processing</h3>
+        <p>Fast-track support services for travelers requiring urgent Vietnam ETA processing assistance.</p>
+      </div>
+
+      <div class="card">
+        <h3>Document Verification</h3>
+        <p>Expert review of travel documents to help minimize errors and application delays.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about">
+    <div>
+      <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?q=80&w=1200&auto=format&fit=crop" alt="Vietnam Travel">
+    </div>
+
+    <div>
+      <div class="section-title" style="text-align:left; margin-bottom:20px;">
+        <h2>About Our Agency</h2>
+      </div>
+
+      <p>
+        We provide independent Vietnam ETA and eVisa assistance services for travelers worldwide. Our team helps applicants understand requirements, prepare documents, and complete online applications accurately.
+      </p>
+
+      <br>
+
+      <p>
+        Our goal is to simplify the visa application process through professional support and transparent communication.
+      </p>
+
+      <div class="notice">
+        <strong>Disclaimer:</strong> We are an independent travel assistance agency and are not affiliated with the Vietnam government or any government authority.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="section-title">
+      <h2>Application Process</h2>
+    </div>
+
+    <div class="steps-grid">
+      <div class="card process-step">
+        <div class="step-number">1</div>
+        <h3>Submit Inquiry</h3>
+        <p>Complete the online inquiry form with your travel details and passport information.</p>
+      </div>
+
+      <div class="card process-step">
+        <div class="step-number">2</div>
+        <h3>Upload Documents</h3>
+        <p>Provide passport copies, photos, and supporting documents for review.</p>
+      </div>
+
+      <div class="card process-step">
+        <div class="step-number">3</div>
+        <h3>Application Review</h3>
+        <p>Our team checks your application for completeness and accuracy.</p>
+      </div>
+
+      <div class="card process-step">
+        <div class="step-number">4</div>
+        <h3>Receive ETA</h3>
+        <p>Get your processed ETA or eVisa documents delivered through email.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-title">
+      <h2>Why Choose Us</h2>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="card">
+        <h3>Secure Process</h3>
+        <p>Protected application handling and secure document submission procedures.</p>
+      </div>
+
+      <div class="card">
+        <h3>Expert Support</h3>
+        <p>Professional guidance throughout the visa application process.</p>
+      </div>
+
+      <div class="card">
+        <h3>Transparent Pricing</h3>
+        <p>Clear service fees without hidden charges or misleading claims.</p>
+      </div>
+
+      <div class="card">
+        <h3>Fast Communication</h3>
+        <p>Responsive support team available to answer traveler inquiries.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta">
+      <h2>Start Your Vietnam ETA Application Today</h2>
+      <p>Apply online with professional support and simplified document assistance.</p>
+      <br>
+      <a href="#contact" class="btn">Get Started</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h3>What is a Vietnam ETA?</h3>
+        <p>A Vietnam ETA/eVisa is an electronic travel authorization allowing eligible travelers to enter Vietnam for approved purposes.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>How long does processing take?</h3>
+        <p>Processing times vary depending on application type and government approval timelines.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Can I apply online?</h3>
+        <p>Yes, travelers can submit applications and supporting documents online.</p>
+      </div>
+
+      <div class="faq-item">
+        <h3>Do you guarantee approval?</h3>
+        <p>No. Final visa approval decisions are made solely by the relevant immigration authorities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="card">
+      <form>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
+          <input type="text" placeholder="Full Name" style="padding:14px;border:1px solid #ccc;border-radius:8px;">
+          <input type="email" placeholder="Email Address" style="padding:14px;border:1px solid #ccc;border-radius:8px;">
+        </div>
+
+        <br>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;">
+          <input type="tel" placeholder="Phone Number" style="padding:14px;border:1px solid #ccc;border-radius:8px;">
+          <input type="text" placeholder="Country" style="padding:14px;border:1px solid #ccc;border-radius:8px;">
+        </div>
+
+        <br>
+
+        <textarea rows="6" placeholder="Your Message" style="width:100%;padding:14px;border:1px solid #ccc;border-radius:8px;"></textarea>
+
+        <br><br>
+
+        <button type="submit" class="btn" style="border:none;cursor:pointer;">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Vietnam ETA</h3>
+        <p>Professional Vietnam ETA and eVisa assistance services for international travelers.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: info@yourdomain.com</li>
+          <li>Phone: +91 98765 40321</li>
+          <li>Address: Punjab, India</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2026 Vietnam ETA Assistance Services. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
