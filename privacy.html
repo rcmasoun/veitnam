@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vietnam ETA Assistance Services</title>
+  <meta name="description" content="Professional Vietnam ETA and eVisa assistance services for tourists and business travelers. Fast processing support, secure applications, and expert guidance." />
+  <meta name="keywords" content="Vietnam ETA, Vietnam eVisa, Vietnam visa assistance, Vietnam tourist visa, Vietnam business visa" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f5f7fb;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.8)), url('https://images.unsplash.com/photo-1528127269322-539801943592?q=80&w=1600&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #38bdf8;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title h2 {
+      font-size: 40px;
+      color: #0f172a;
+    }
+
+    .services-grid,
+    .steps-grid,
+    .benefits-grid,
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #0f172a;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    .process-step {
+      text-align: center;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: #38bdf8;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      border-radius: 50%;
+      font-size: 24px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      border-radius: 20px;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .faq-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    }
+
+    footer {
+      background: #020617;
+      color: #fff;
+      padding: 60px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    footer h3 {
+      margin-bottom: 15px;
+      color: #38bdf8;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer ul li {
+      margin-bottom: 10px;
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 20px;
+      font-size: 14px;
+    }
+
+    .notice {
+      background: #fff7ed;
+      border-left: 6px solid #f97316;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 30px;
+      font-size: 15px;
+    }
+
+    @media(max-width:768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">Vietnam ETA</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section id="privacy-policy">
+  <div class="container">
+    <div class="section-title">
+      <h2>Privacy Policy</h2>
+    </div>
+
+    <div class="card">
+      <p>
+        We value your privacy and are committed to protecting your personal information. Information submitted through our website may include your name, email address, phone number, passport information, and travel details.
+      </p>
+
+      <br>
+
+      <p>
+        Your information is used solely for providing ETA and visa assistance services, customer support, payment processing, and communication regarding your application.
+      </p>
+
+      <br>
+
+      <p>
+        We do not sell, rent, or share your personal information with third parties except where necessary for application processing, payment services, or legal compliance.
+      </p>
+
+      <br>
+
+      <p>
+        By using our website, you consent to the collection and use of your information in accordance with this Privacy Policy.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Vietnam ETA</h3>
+        <p>Professional Vietnam ETA and eVisa assistance services for international travelers.</p>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Legal</h3>
+         <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms-cond.html">Terms & Conditions</a></li>
+          <li><a href="refund.html">Refund Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: info@yourdomain.com</li>
+          <li>Phone: +91 98765 43210</li>
+          <li>Address: Punjab, India</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2026 Vietnam ETA Assistance Services. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <script>
+    function payNow(packageName, amount) {
+      var options = {
+        key: "YOUR_RAZORPAY_KEY_ID",
+        amount: amount * 100,
+        currency: "USD",
+        name: "Vietnam ETA Services",
+        description: packageName,
+        image: "https://cdn-icons-png.flaticon.com/512/201/201623.png",
+        handler: function (response) {
+          alert("Payment Successful. Payment ID: " + response.razorpay_payment_id);
+        },
+        prefill: {
+          name: "",
+          email: "",
+          contact: ""
+        },
+        theme: {
+          color: "#38bdf8"
+        }
+      };
+
+      var rzp = new Razorpay(options);
+      rzp.open();
+    }
+  </script>
+</body>
+</html>
